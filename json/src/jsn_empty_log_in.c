@@ -1,7 +1,7 @@
 #include "cJSON.h"
-#include "my_json.h"
+#include "my_json.h"    //тут должен быть наш общий header...
 
-/*создается пустой json (при входе user-а)*/
+/*создается пустой json (при входе user-а в свой аккаунт)*/
 char *jsn_empty_log_in() {  //добавьте этот прототип в общий header!!!
     cJSON *object = NULL;
     char *str = NULL;   //вывод
@@ -10,6 +10,8 @@ char *jsn_empty_log_in() {  //добавьте этот прототип в об
     cJSON_AddStringToObject(object, "type", "log_in"); //создается ключ "type" и значение "log_in" в объекте object
     cJSON_AddStringToObject(object, "user_login", "none");  //создается ключ "user_login" и значение "none" в объекте object
     cJSON_AddStringToObject(object, "user_password", "none");   //создается ключ "user_password" и значение "none" в объекте object
+    cJSON_AddStringToObject(object, "log_in_time", "none");   //создается ключ "log_in_time" и значение "none" в объекте object
+
     cJSON_AddStringToObject(object, "additional_field", "none");    //создается ключ "additional_field" и значение "none" в объекте object
 
     str = cJSON_Print(object);  //конвертирую json в строку
