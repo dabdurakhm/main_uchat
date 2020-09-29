@@ -1,0 +1,34 @@
+//поля при регистрации пользователя
+{
+    "type": "registration",
+    "user_id":      "none",
+    "user_first_name":      "none",
+    "user_last_name":       "none",
+    "user_login":   "none",
+    "user_password":        "none",
+    "user_email":   "none",
+    "user_phone_number":    "none",
+    "registration_time":    "none",
+    "additional_field":     "none"
+}
+
+//поля при входе пользователя
+{
+    "type":     "log_in",
+    "user_login":   "none",
+    "user_password":    "none",
+    "log_in_time":      "none",
+    "additional_field":     "none"
+}
+
+//поля при отправке личного сообщения от user1 к user2
+{
+    "type":     "private_message",
+    "user1_id":    "none",
+    "user2_id":    "none",
+    "message":     "none",
+    "message_sent_at":     "none",
+    "additional_field":     "none"
+}
+
+
